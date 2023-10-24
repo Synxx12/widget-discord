@@ -1,0 +1,52 @@
+/* DiscordWidget.css */
+
+/* Animasi latar belakang bergerak */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Widget Discord */
+iframe {
+  width: 300px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveBackground 10s linear infinite; /* Memulai animasi latar belakang */
+  background: url("https://cdn.discordapp.com/attachments/1115168261991055412/1164879927003324436/F8x1dhiagAA3zvL.jpeg?ex=6544d1f9&is=65325cf9&hm=f69d5cf3d4aa733d2374664feac5126574a9dab6150d6b88ecd54b5adaa2e6ce&") center center; /* Ganti dengan gambar latar belakang yang Anda inginkan */
+  background-size: cover;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff8a00; /* Ganti warna saat mengarahkan kursor ke tautan */
+  text-decoration: underline;
+}
